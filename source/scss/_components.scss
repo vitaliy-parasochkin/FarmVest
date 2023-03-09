@@ -98,3 +98,27 @@
         color: $light-black;
     }
 }
+
+.pathway-body-accordions {
+    .accordion-item,
+    .accordion-button,
+    .accordion-button:focus {
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: none;
+        background: $light-green;
+        color: $light-black;
+    }
+    .accordion-header {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 177%;
+        color: $light-black;
+        background: $light-green;
+    }
+
+    .accordion-item {
+        margin-bottom: 24px;
+    }
+}

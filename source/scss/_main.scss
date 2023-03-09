@@ -160,7 +160,8 @@ main {
     margin-top: 48px;
 }
 
-.how-works-image-wrapper {
+.how-works-image-wrapper,
+.pathway-image-wrapper {
     display: flex;
     background: $light-green;
     border-radius: 20px;
@@ -178,10 +179,10 @@ main {
 .how-works-list {
     display: flex;
     flex-direction: column;
+    row-gap: 48px;
 }
 
 .how-works-list-item {
-    margin-bottom: 48px;
     display: flex;
     align-items: center;
     column-gap: 32px;
@@ -211,4 +212,23 @@ main {
     align-items: center;
     justify-content: center;
     background: $light-green;
+}
+
+.pathway-block {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+}
+
+.pathway-body {
+    flex: 0 0 calc(50% - 12px);
+}
+
+.pathway-body-text {
+    margin-bottom: 48px;
+}
+
+.pathway-body-title {
+    margin-bottom: 24px;
 }

@@ -61,12 +61,9 @@ button::-moz-focus-inner {
 }
 
 a,
-a:visited {
-  text-decoration: none;
-}
-
+a:visited,
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul li {
@@ -244,7 +241,8 @@ main {
   margin-top: 48px;
 }
 
-.how-works-image-wrapper {
+.how-works-image-wrapper,
+.pathway-image-wrapper {
   display: flex;
   background: rgba(0, 128, 0, 0.05);
   border-radius: 20px;
@@ -262,10 +260,10 @@ main {
 .how-works-list {
   display: flex;
   flex-direction: column;
+  row-gap: 48px;
 }
 
 .how-works-list-item {
-  margin-bottom: 48px;
   display: flex;
   align-items: center;
   -moz-column-gap: 32px;
@@ -296,6 +294,26 @@ main {
   align-items: center;
   justify-content: center;
   background: rgba(0, 128, 0, 0.05);
+}
+
+.pathway-block {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+
+.pathway-body {
+  flex: 0 0 calc(50% - 12px);
+}
+
+.pathway-body-text {
+  margin-bottom: 48px;
+}
+
+.pathway-body-title {
+  margin-bottom: 24px;
 }
 
 .button {
@@ -385,6 +403,27 @@ main {
   line-height: 20px;
   font-family: "League Spartan", sans-serif;
   color: #263238;
+}
+
+.pathway-body-accordions .accordion-item,
+.pathway-body-accordions .accordion-button,
+.pathway-body-accordions .accordion-button:focus {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: none;
+  background: rgba(0, 128, 0, 0.05);
+  color: #263238;
+}
+.pathway-body-accordions .accordion-header {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 177%;
+  color: #263238;
+  background: rgba(0, 128, 0, 0.05);
+}
+.pathway-body-accordions .accordion-item {
+  margin-bottom: 24px;
 }
 
 @media (max-width: 991px) {

@@ -57,11 +57,9 @@ button::-moz-focus-inner {
     border: 0;
 }
 a,
-a:visited {
-    text-decoration: none;
-}
+a:visited,
 a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 ul li {
     list-style: none;

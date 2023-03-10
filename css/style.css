@@ -189,7 +189,7 @@ main {
 }
 
 .main-description-block {
-  height: calc(100vh - 100px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -201,6 +201,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .main-description-title {
@@ -223,13 +224,13 @@ main {
   -moz-column-gap: 48px;
        column-gap: 48px;
   row-gap: 36px;
+  padding-bottom: 36px;
 }
 
 .main-description-label {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 calc(20% - 48px);
 }
 
 .how-works-block {
@@ -314,6 +315,62 @@ main {
 
 .pathway-body-title {
   margin-bottom: 24px;
+}
+
+.why-choose-block {
+  margin: 48px 0;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.why-choose-body {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(50% - 24px);
+}
+
+.why-choose-text {
+  margin-bottom: 24px;
+}
+
+.why-choose-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-list-item {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #263238;
+  position: relative;
+  counter-increment: my-awesome-counter;
+  margin-bottom: 36px;
+}
+.why-choose-list-item::before {
+  content: counter(my-awesome-counter);
+  width: 64px;
+  height: 64px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #008000;
+  background: rgba(0, 128, 0, 0.05);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.why-choose-button-wrapper a {
+  cursor: pointer;
 }
 
 .button {
